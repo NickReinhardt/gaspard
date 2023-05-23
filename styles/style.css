@@ -1,0 +1,149 @@
+/* Global */
+:root {
+    --main-font: 'Roboto';
+
+    --primary-color: #efefef;
+    --secondary-color: #E5B25D;
+    --third-color: #1b9337;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--main-font);
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+
+.header__logo-img {
+    width: 190px;
+    height: 120px;
+}
+
+.header__logo-titulo {
+    font-size: 36px;
+    font-weight: 700;
+    margin: .3em 0;
+    text-transform: uppercase;
+    letter-spacing: 4.9px;
+    color: var(--third-color);
+}
+
+/* Conteúdo Principal */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+
+/* Botão Global */
+.btn {
+    color: #fff;
+    appearance: none;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+
+/* Botão Capturar */ 
+.btn-capturar {
+    background-color: #068fb8;
+    box-shadow: rgba(86, 221, 255, 0.15) 0 4px 9px;
+    color: #fff;
+}
+
+.btn-capturar:hover {
+    background-color: #006382;
+    box-shadow: rgba(0, 255, 255, 0.2) 0 6px 12px;
+}
+
+/* Textarea */
+.words {            
+    height:300px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid var(--secondary-color);
+    overflow-y: scroll;
+    letter-spacing: 0.12em;
+    background-color: #e4e4e4;
+    color: #161616;
+    line-height: 1.3em;
+}
+.words span {
+    font-size: 22px;
+}
+
+/*  Botão Salvar */
+.btn-salvar {
+    background-color: #27ae60;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+}
+
+.btn-salvar:hover {
+    background-color: #1e8449;
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+.main__arquivo-titulo {
+    width: 24em;
+    color: #3e3e3e;
+    font-size: 24px;
+    border-radius: 0.5em;
+    padding: 10px 20px;
+    border: 2px solid #068fb8;
+    margin-top: .5em;
+}
+
+.main__arquivo-titulo:hover {
+
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    transition: 0.5s;
+}
+
+.main__arquivo-texto {
+    font-size: 1.2em;
+    color: #3e3e3e;
+   
+}

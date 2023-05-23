@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="imgs/unir.png">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Gaspard - Inclusão Social</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="imgs/logo2.png">
+            <h1 class="header__logo-titulo">Gaspard</h1>   
+        </div> 
+    </header>
+
+
+    <main class="main">
+        <div>
+            <button id="btn_speech" role="button" class="btn btn-capturar" onclick='doStartStopCheck()'>
+                Capturar Áudio
+            </button>
+        </div>
+    
+        <div>
+            <div id="texto" class="words"></div><br> 
+        </div>
+
+        <div>
+            <label class="main__arquivo-texto" for="input-fileName">Nome do Aluno</label><br/>
+            <input type="text" id="titulo" class="main__arquivo-titulo">
+        </div>
+
+   
+        
+        <div>
+            <button onclick="salvar()" role="button" class="btn btn-salvar">Salvar</button>
+        </div>
+    </main>
+
+   <script src="scripts/filesave.js"></script>
+    <!-- Biblioteca que adicionara o código -->
+    <script type="text/javascript" src="FileSaver/src/FileSaver.js"></script>
+    <!-- função ao clicar em salvar -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
